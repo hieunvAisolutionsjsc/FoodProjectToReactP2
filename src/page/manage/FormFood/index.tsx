@@ -3,7 +3,7 @@ import {  PropsFormAdd, ItemDetail, Res, DataForm } from '../interface';
 import { useDispatch, useSelector } from 'react-redux';
 
 import "./style.css"
-import { Button, Col, Input, Row, Upload } from 'antd';
+import { Button, Col, Input, message, Row, Upload } from 'antd';
 import FileField from '../../../field/FileField';
 import { useForm } from 'react-hook-form';
 import TextField from '../../../field/TextField';
@@ -61,6 +61,7 @@ const hanhdleFood =(newData:any) =>{
    reset()
    setFileListBig([])
    setFileListSmail([])
+   message.success("Add food success")
    handleOpenAdd()
   }
   return (

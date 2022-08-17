@@ -70,18 +70,21 @@ export default function ListManage(props : PropsListManage) {
                   </Dropdown>, 
                    
                     dc2 : item.dc2,
+                    rate : <span className='rate'> {rateJSX.map((item , index)=>{
+                      return <React.Fragment key={index}>{item}</React.Fragment>
+                           })} </span>,
                     imgbig : <img style={{width: "70px"}} src={item.imgbig} />,
                     imgsmail : <img style={{width: "70px"}} src={item.imgsmail} /> , 
                     stt : index
                   }
   })
  let columns = columnsManage ; 
-  columns = screen < 600 ?  (columns.filter(item => {
+  columns = screen < 712 ?  (columns.filter(item => {
     return ((!item.isHide )  &&  item.key !== "stt" )
   }      
 ))
 : columns ; 
-screen < 600 && columns.push({
+screen < 712 && columns.push({
 title: 'More Infor',
 dataIndex: 'moreInfor',
 key: 'moreInfor',

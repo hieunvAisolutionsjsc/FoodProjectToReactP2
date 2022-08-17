@@ -37,6 +37,7 @@ export const  columnsManage = [
       dataIndex: 'rate',
       key: 'rate',
       isHide : true , 
+      width : 150,
       sorter: (a : any, b : any) => a.rate - b.rate,
     },
  
