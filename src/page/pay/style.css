@@ -1,0 +1,61 @@
+.pay{
+  width: unset;
+  max-width: 1000px !important;
+ 
+}
+#paytop{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#paytop  p{
+  font-size: 1.2rem ;
+  font-weight: 600;
+  color: rgb(32, 216, 81);
+  text-transform: uppercase;
+}
+.formpay{
+  width: 100px;
+}
+.formpay  form   div:nth-of-type(4){
+  margin: 0 !important;
+}
+.formpay  form   div:nth-of-type(4)  span{
+
+  min-width: 200px !important;
+}
+
+label{
+  margin-top: .6rem;
+  margin-bottom: .1rem !important;
+}
+.formpay > h3{
+  width: 100%;
+  min-width: 131px;
+}
+/* td{
+  background: #ffff;
+} */
+.payment{
+  width: 700px;
+}
+@media screen and (max-width : 770px) {
+  .payment{
+    width: 90vw;
+  }
+  h3{
+    text-align: center;
+    margin-top: 1rem;
+    
+  }
+  .formpay{
+    width: 100% !important;
+  }
+  .formpay  form   div{
+    width: 100% !important;
+  
+  }
+ .formpay__top p{
+   font-size: 1rem !important;
+ }
+}
