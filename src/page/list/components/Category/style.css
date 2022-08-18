@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 
 
-/* .category >h1{
-    text-align: center;
-    padding: 2rem 0;
-} */
-button{
-    /* cursor: pointer; */
-}
+
 .category > .container{
     
-    max-width: 700px;
+    max-width: 600px;
     margin:  0 auto !important;
   
 }
-
+@media screen and (max-width : 575px) {
+    .category > .container{
+    
+        max-width: 400px;
+        margin:  0 auto !important;
+      
+    }
+}
+.titlefood{
+    margin-top: 2rem;
+    padding-top: 2rem;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
 .category__item{
 
 
@@ -34,13 +42,12 @@ button{
     color: #fff;
     top: 50%;
 
-    width: 100%;
     left: 50%;
     transform: translate(-50% , -50%);
     z-index: 10;
     opacity: 0;
     /* margin-top: 1rem; */
-    font-size: 1.1rem;
+    font-size: .8rem;
     text-align: center;
     transition: all .6s ease-in;
 }

@@ -9,7 +9,7 @@ export default function Category(props : category) {
   return (
     <div className='category'>
         
-        <h1 style={{textAlign: "center"}}>Danh Mục</h1>
+        <p className="titlefood">Danh Sách Đồ Ăn</p>
        <Row gutter={[10 , 10]} style={{ justifyContent : "center"}} className='container'>
    {
     categoryList.map((item , index)=>{

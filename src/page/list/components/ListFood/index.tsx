@@ -39,7 +39,7 @@ export default function ListFood( props : listFood) {
   console.log(cart)
   return (
     <div className='foodlist'>
-   <p id="titlefood">Danh Sách Đồ Ăn</p>
+
    <Row gutter={[15 , 15]}   className='container'>
     {
       listFood.map((item , index)=>{

@@ -7,9 +7,9 @@ export default function CategoryItem(props : categoryItem) {
 
   return (
      <Col 
-     xs={{span : 11}}
-     sm={{span : 8}}
-     md={{span : 8}}
+     xs={{span : 8}}
+     sm={{span : 4}}
+     md={{span : 4}}
      
       >
       <div className={`category__item ${category === nameT} ` } value-id="a" onClick={()=>{changeCategory(nameT)}}>

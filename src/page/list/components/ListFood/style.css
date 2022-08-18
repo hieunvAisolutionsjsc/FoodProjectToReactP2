@@ -10,13 +10,6 @@
    
    
 }
-.foodlist > p{
-margin-top: 2rem;
-padding-top: 2rem;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-}
 .foodlist__item {
     border-radius: 9px;
   
